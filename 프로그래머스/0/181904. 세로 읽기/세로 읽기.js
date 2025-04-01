@@ -1,0 +1,1 @@
+const solution = (my_string, m, c) => [...my_string].filter((_, i) => i % m === c - 1).join('');
