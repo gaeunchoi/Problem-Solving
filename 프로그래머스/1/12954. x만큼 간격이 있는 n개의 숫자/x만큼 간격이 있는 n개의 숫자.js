@@ -1,0 +1,1 @@
+const solution = (x, n) => new Array(n).fill(x).map((v, i) => (i+1) * v)
