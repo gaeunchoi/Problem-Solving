@@ -1,0 +1,1 @@
+const solution = (order) => order.reduce((money, ele) => money + (ele.includes('cafelatte') ? 5000 : 4500), 0)
