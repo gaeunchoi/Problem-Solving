@@ -1,10 +1,10 @@
 # [level 1] 예산 - 12982 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12982) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12982?language=python3) 
 
 ### 성능 요약
 
-메모리: 33.5 MB, 시간: 0.34 ms
+메모리: 9.18 MB, 시간: 0.03 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 04월 01일 19:02:00
+2025년 04월 01일 19:02:07
 
 ### 문제 설명
 
