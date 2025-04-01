@@ -1,0 +1,1 @@
+const solution = (arr, flag) => arr.reduce((base, value, i) => flag[i] ? [...base, ...new Array(value*2).fill(value)]:base.slice(0, -value), [])
