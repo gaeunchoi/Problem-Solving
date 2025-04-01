@@ -1,0 +1,1 @@
+const solution = (arr) => [...arr, arr.at(-1) > arr.at(-2)? arr.at(-1) - arr.at(-2) : arr.at(-1)*2]
