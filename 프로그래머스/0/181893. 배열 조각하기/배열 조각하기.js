@@ -1,0 +1,1 @@
+const solution = (arr, query) => query.reduce((acc, cur, idx) => idx % 2 === 0 ? acc.splice(0, cur+1) : acc.splice(cur), arr)
