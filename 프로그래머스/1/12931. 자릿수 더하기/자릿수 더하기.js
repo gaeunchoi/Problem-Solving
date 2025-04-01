@@ -1,0 +1,1 @@
+const solution = n => [...String(n)].reduce((acc, cur) => acc+ +cur, 0)
