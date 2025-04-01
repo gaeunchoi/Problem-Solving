@@ -1,0 +1,1 @@
+const solution = x => x % [...String(x)].reduce((acc, cur) => +acc + +cur, 0) === 0 ? true : false
