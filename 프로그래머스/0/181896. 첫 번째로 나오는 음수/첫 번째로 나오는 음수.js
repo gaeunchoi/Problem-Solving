@@ -1,0 +1,1 @@
+const solution = arr => arr.findIndex(v => v < 0)
