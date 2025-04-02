@@ -4,5 +4,4 @@ def solution(a, b, n):
         ret, res = divmod(n, a)
         result += ret*b
         n = ret*b + res
-        print(ret, res, n)
     return result
