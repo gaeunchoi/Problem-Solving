@@ -1,0 +1,1 @@
+const solution = (strings, n) => strings.sort().sort((a,b) => a[n] >= b[n] ? 1 : -1);
