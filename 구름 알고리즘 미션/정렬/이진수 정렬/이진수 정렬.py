@@ -1,0 +1,5 @@
+N, K = map(int, input().split())
+nums = list(map(int, input().split()))
+cnt1_nums = list([sum(map(int, bin(ele)[2:])), ele] for ele in nums)
+sorted_cnts = sorted(cnt1_nums, key=lambda x: (-x[0], -x[1]))
+print(sorted_cnts[K-1][1])
