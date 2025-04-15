@@ -1,7 +1,6 @@
 function solution(citations) {
   var answer = 0;
 
-  // 내림차순 정렬
   citations.sort((a, b) => b-a);
 
   [...citations].forEach((v, i) => {
