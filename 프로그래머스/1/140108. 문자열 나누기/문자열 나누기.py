@@ -1,22 +1,23 @@
+from collections import deque
 def solution(s):
-    cnt = 0
-    x = []
-    not_x = []
-    for c in s:
-        if not x:
-            x.append(c)
-        else:
-            if c == x[0]:
-                x.append(c)
+    ans = 0
+
+    q = deque(s)    
+    while q:
+        a, b = 1, 0
+        x = q.popleft()    
+
+        while q:
+            n = q.popleft()
+            if n == x:
+                a += 1
             else:
-                not_x.append(c)
-        
-        if(len(x) == len(not_x)):
-            cnt += 1
-            x = []
-            not_x = []
-            
-    if x or not_x:
-        cnt += 1
-    
-    return cnt
+                b += 1
+
+            if a == b:
+                ans += 1
+                break
+    if a != b:
+        ans += 1
+
+    return ans
