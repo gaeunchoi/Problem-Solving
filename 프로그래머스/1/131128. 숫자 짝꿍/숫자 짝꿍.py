@@ -12,10 +12,6 @@ def solution(X, Y):
     if not common:
         return "-1"
 
-    common.sort(reverse=True)
-    result = ''.join(common)
+    result = ''.join(sorted(common, reverse=True))
 
-    if result[0] == '0':  # 모든 숫자가 0이면
-        return "0"
-
-    return result
+    return "0" if result[0] == '0' else result
