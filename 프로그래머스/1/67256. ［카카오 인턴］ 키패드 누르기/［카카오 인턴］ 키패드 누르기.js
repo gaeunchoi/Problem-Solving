@@ -14,7 +14,7 @@ function solution(numbers, hand) {
     }
     
     numbers.forEach(number => {
-        const [row, col] = number === 0 ? [3, 1] : [(number - 1) / 3 >> 0, (number - 1) % 3];
+        const [row, col] = number === 0 ? [3, 1] : [Math.floor((number - 1) / 3), (number - 1) % 3];
         if(left.includes(number)) {
             addLeft(row, col);
         }
