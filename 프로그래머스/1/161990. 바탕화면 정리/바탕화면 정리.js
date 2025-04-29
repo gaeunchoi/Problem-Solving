@@ -18,3 +18,22 @@ function solution(wallpaper) {
     }
     return [lux, luy, rdx+1, rdy+1];
 }
+
+// 좋아요 많은 풀이 이거 짱이다 ,,
+// function solution(wallpaper) {
+//    let left = [];
+//    let top = [];
+//    let right = []
+//    let bottom = [];
+//    wallpaper.forEach((v,i) => {
+//        [...v].forEach((val,ind) => {
+//            if(val === "#") {
+//                left.push(i)
+//                top.push(ind)
+//                right.push(i + 1)
+//                bottom.push(ind + 1)
+//            }
+//        })
+//    })
+//    return [Math.min(...left), Math.min(...top), Math.max(...right), Math.max(...bottom)]
+//}
