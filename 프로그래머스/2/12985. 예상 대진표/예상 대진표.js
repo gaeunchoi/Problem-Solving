@@ -1,14 +1,9 @@
-const ceil = (num) => {
-    return Math.ceil(num / 2);
-}
-
-function solution(n,a,b){
-    let result = 1;
-    
-    while(ceil(a) !== ceil(b)){
-        a = ceil(a);
-        b = ceil(b);
-        result++;
+function solution(n, a, b) {
+    let result = 0;
+    while (a !== b) {
+        a = Math.ceil(a / 2);
+        b = Math.ceil(b / 2);
+        result += 1;
     }
     return result;
 }
