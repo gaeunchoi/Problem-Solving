@@ -5,7 +5,6 @@ def solution(dirs):
     visited = set()
     directions = {'U': [-1, 0], 'D': [1, 0], 'L': [0, -1], 'R': [0, 1]}
 
-    result = 0
     for dir in dirs:
         dx, dy = directions[dir]
         mx, my = cx + dx, cy + dy
