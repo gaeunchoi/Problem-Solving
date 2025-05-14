@@ -1,8 +1,5 @@
 function isPrime(n){
-    if(n <= 1) return false;
-    if(n == 2) return true;
-    if(n % 2 == 0) return false;
-    
+    if (n < 2 || n % 2 === 0) return n === 2;
     for(let i = 3; i < Math.floor(n ** 0.5) + 1 ; i += 2){
         if(n % i == 0) return false;
     }
@@ -15,7 +12,6 @@ function solution(n, k) {
     
     let result = 0;
     for(const cand of candidates){
-        if(cand.includes("0") || cand.length === 0) continue;
         if(isPrime(+cand)) result++;
     }
     return result;
