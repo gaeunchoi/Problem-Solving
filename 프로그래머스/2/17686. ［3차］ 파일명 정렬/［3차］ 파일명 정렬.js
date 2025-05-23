@@ -1,6 +1,6 @@
 function solution(files) {
     return files.sort((a, b) => {
-        const regex = /([^\d]+)(\d{1,5})/;
+        const regex = /^([^\d]+)(\d{1,5})/;
         
         const [, headA, numA] = a.match(regex);
         const [, headB, numB] = b.match(regex);
