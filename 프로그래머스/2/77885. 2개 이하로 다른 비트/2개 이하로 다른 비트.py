@@ -1,3 +1,5 @@
+# 짝수 => f(x) = x + 1
+# 홀수 => x 가장 오른쪽 "01"을 "10"으로 바꾸기
 def solution(numbers):
     answer = []
     for num in numbers:
